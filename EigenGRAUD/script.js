@@ -43,6 +43,7 @@ class SceneB extends Phaser.Scene
     constructor ()
     {
         super({ key: 'sceneB' });
+        backgroundColor: '#000000'
     }
 
     preload ()
@@ -50,6 +51,7 @@ class SceneB extends Phaser.Scene
         this.load.path = './assets/';
         this.load.audio('BGM', 'bgm.mp3');
         this.load.audio('start sound', 'start sound.wav');
+        this.load.image('Title', 'Title.jpg');
     }
 
     create ()
@@ -58,15 +60,15 @@ class SceneB extends Phaser.Scene
         let sound = this.sound.add('BGM');
         sound.play();
 
-       this.add.text(
-            800, //x
-            400,//y
-            "Eigen: GRAU_", //text
-            {
-                font: "100px Unica One",
-                color: "#ffffff",
-            }
-        );
+        this.imageObject = this.add.image(
+            800,//x
+            400,
+            'Title',//imagename
+        )
+
+        this.imageObject.setScale(0.1);
+
+       
         
 
         let box = this.add.text(
@@ -224,19 +226,12 @@ class SceneC extends Phaser.Scene
 
 
         */
-       
-
-
-
-
-
-
-
+    
 const config = {
     type: Phaser.AUTO,
     width: 1920,
     height: 1000,
-    backgroundColor: '#000000',
+    backgroundColor: '#16161D',
     parent: 'phaser-example',
     scene: [ SceneA, SceneB, SceneC ]
 };
