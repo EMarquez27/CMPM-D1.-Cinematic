@@ -1,12 +1,12 @@
-Eigen: Grau
+Elyzza Joyce Marquez
 
 Key requirements for this assignment:
 
-3+ scenes: production, landscape/main menu, main character selection
+3+ scenes: (1) production studio intro slide, (2) main menu, (3) main character selection
 
-2+ audio assets: various audio files from freesound.org/ mixed in AUDACITY
+2+ audio assets: (1) background music composed of various audio files from freesound.org/ mixed in AUDACITY, (2) selection of character sound
 
-2+ image assets: softtofu productions and 2 main characters drawn by me in PROCREATE.. landscape collage pics found through pinterest 
+2+ image assets: (1) softtofu productions and (2,3) main characters drawn by me in PROCREATE
 
 2+ geometric shapes: 
 
