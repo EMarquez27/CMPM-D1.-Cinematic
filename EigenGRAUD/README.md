@@ -6,7 +6,7 @@ Key requirements for this assignment:
 
 2+ audio assets: (1) background music composed of various audio files from freesound.org/ mixed in AUDACITY, (2) the start sound in the main menu from freesound.org
 
-2+ image assets: (1) softtofu productions and (2,3) main characters drawn by me in PROCREATE
+2+ image assets: (1) softtofu productions and (2,3) main characters drawn by me in PROCREATE, (4) Title logo made by me in procreate
 
 2+ geometric shapes: (1) There is an interactive polygon structure in the main menu screen. (2) A line to intersect that polygon structure.
 
