@@ -40,6 +40,8 @@ class SceneB extends Phaser.Scene
     polygons;
     seedPolygon;
     graphics;
+    
+
     constructor ()
     {
         super({ key: 'sceneB' });
@@ -51,25 +53,30 @@ class SceneB extends Phaser.Scene
         this.load.path = './assets/';
         this.load.audio('BGM', 'bgm.mp3');
         this.load.audio('start sound', 'start sound.wav');
-        this.load.image('Title', 'Title.jpg');
+        this.load.image('Title', 'Title.png');
     }
 
     create ()
     {
+
+        const line = new Phaser.Geom.Line(0, 600, 1500, 0);
+
+        const graphics = this.add.graphics({ lineStyle: { width: 4, color: 0xaa00aa } });
+
+        graphics.strokeLineShape(line);
+
         this.cameras.main.fadeIn(1000, 0,0,0);
         let sound = this.sound.add('BGM');
         sound.play();
 
         this.imageObject = this.add.image(
-            800,//x
+            1100,//x
             400,
             'Title',//imagename
         )
 
-        this.imageObject.setScale(0.1);
+        this.imageObject.setScale(0.4);
 
-       
-        
 
         let box = this.add.text(
             800, //x
@@ -138,6 +145,7 @@ class SceneB extends Phaser.Scene
 
             this.graphics.strokePoints(poly.points, true);
         }
+
     }
 
 }
