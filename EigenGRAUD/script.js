@@ -1,3 +1,4 @@
+
 class SceneA extends Phaser.Scene
 {
     constructor ()
@@ -7,20 +8,16 @@ class SceneA extends Phaser.Scene
 
     preload (){
         this.load.path = './assets/';
-        this.load.image('softtofu', 'softtofu.jpg');
-        this.load.audio('background_music', 'yuh.mp3');
+        this.load.image('studio', 'studio.jpg');
     }
 
     create ()
     {
-        //play music 
-        this.backgroundMusic = this.sound.add('background_music', {loop:true });
-        this.backgroundMusic.play();
-        //create image object 
+       
         this.imageObject = this.add.image(
             900,//x
             500,
-            'softtofu',//imagename
+            'studio',//imagename
         )
         this.imageObject.scale = 1;
 
@@ -60,23 +57,21 @@ class SceneB extends Phaser.Scene
 
     preload ()
     {
-
+        this.load.path = './assets/';
+        this.load.image('Title', 'TitleText.png');
+        this.load.audio('BGM', 'bgm.mp3');
     }
 
     create ()
     {
-        this.textObject = this.add.text(
-            725, //x
-            200,//y
-            "eigen: GRAU", //text
-            {
-                font: "80px Unica One",
-                color: "#ffffff",
-            }
-        );
+        let sound = this.sound.add('BGM');
+        sound.play();
+        this.titleObject = this.add.image(
+            175, 50, 'Title',
+        )
         
 
-        this.textObject = this.add.text(
+        let box = this.add.text(
             800, //x
             500,//y
             "Press any button.", //text
