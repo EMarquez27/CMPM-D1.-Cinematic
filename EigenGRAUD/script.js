@@ -79,11 +79,17 @@ class SceneB extends Phaser.Scene
 
 
         let box = this.add.text(
-            800, //x
+            1000, //x
             500,//y
-            "Press any button.", //text
+            `   Press any button to continue..
+
+            OPTIONS
+
+            CREDITS
+
+            QUIT`, //text
             {
-                font: "35px Unica One",
+                font: "35px Playfair",
                 color: "#ffffff",
             }
         );
